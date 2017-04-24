@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Formulario de Datos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div align="center">
+        <header>
+            <h1>Formulario de Datos</h1>
+        </header>
+        <form action="">
+            <p>
+                <label for="nombre">Nombre</label><br>
+                <input title="Se necesita un nombre" type="text" name="nombre" required/>
+            </p>
+            <p>
+                <label for="apellido">Apellido</label><br>
+                <input title="Se necesita un apellido" type="text" name="apellido" required/>
+            </p>
+            <p>
+                <label for="tel">Teléfono</label><br>
+                <input type="telefono" name="phone" pattern="[0-9]{9}" title="Debes ingresar un teléfono de 9 dígitos" required>
+                <p>
+                    <label>Escoge a tu Pokemon!</label><br><br>
+                    <select name="pokelista"><id=""><br>
+            <option value="pokemon">Pokemones</option>
+            <option value="pikachu">Pikachu</option>
+            <option value="snorlax">Snorlax</option>
+            <option value="jigglypuff">Jigglypuff</option>
+            <option value="ponyta">Ponyta</option>
+            </select>
+                </p>
+            </p>
+            <p>
+                <label for="em">email</label><br>
+                <input title="email" type="text" name="email" required/>
+            </p>
+            <p>
+                <label for="pw">Crea tu contraseña</label><br>
+                <input type="password" name="pw" pattern=".{6,}" title="6 o más caracteres" required>
+            </p>
+            <p>
+                <input type="submit" name="" value="Enviar">
+            </p>
+
+        </form>
+    </div>
+    <script src="assets/js/javascript.js"></script>
+</body>
+
+</html>
